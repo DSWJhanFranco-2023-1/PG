@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Software de Control y Seguimiento de Solicitudes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .header {
+            background-color: #f1c40f;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 400px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .description {
+            font-size: 16px;
+            text-align: center;
+        }
+        .form-container {
+            text-align: center;
+        }
+        form {
+            text-align: center;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 50%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #f1c40f;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #d4ac0d;
+        }
+        .btn-container {
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #f1c40f;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #d4ac0d;
+        }
+        /* Nuevo estilo para el botón de registro */
+        .btn-register {
+            display: inline-block;
+            background-color: #3498db; /* Cambié el color para diferenciarlo */
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        .btn-register:hover {
+            background-color: #2980b9; /* Cambié el color para diferenciarlo */
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>Software de Control y Seguimiento de Solicitude</h1>
+</div>
+<div class="container">
+    <h1>Iniciar Sesión</h1>
+    <div class="form-container">
+        <form action="Solicitud.php" method="post">
+            <input type="text" name="user" placeholder="Nombre de Usuario" required>
+            <input type="password" name="pass" placeholder="Contraseña" required>
+            <input type="submit" value="Iniciar Sesión">
+        </form>
+    </div>
+    <div class="btn-container">
+        <a class="btn" href="Index.php">Ver Registros</a>
+        <a class="btn-register" href="Registro.php">Registrarse</a> <!-- Agregado el botón de registro -->
+    </div>
+</div>
+</body>
+</html>
